@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1320" font-family="Arial, Helvetica, sans-serif">
+  <!-- background -->
+  <rect width="1000" height="1320" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#0B2D4D">Figura 1. Diagrama de flujo PRISMA 2020 — Selección de estudios</text>
+  <text x="500" y="62" text-anchor="middle" font-size="12" font-style="italic" fill="#555555">Adaptado de Page et al. (2021). BMJ, 372:n71. https://doi.org/10.1136/bmj.n71</text>
+
+  <!-- Sidebar bars + labels -->
+  <!-- IDENTIFICACIÓN -->
+  <rect x="20" y="95" width="38" height="220" fill="#1F3A5F"/>
+  <text x="39" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF" transform="rotate(-90 39 205)">IDENTIFICACIÓN</text>
+  <!-- CRIBADO -->
+  <rect x="20" y="335" width="38" height="640" fill="#1F3A5F"/>
+  <text x="39" y="655" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF" transform="rotate(-90 39 655)">CRIBADO</text>
+  <!-- INCLUIDOS -->
+  <rect x="20" y="995" width="38" height="180" fill="#1F3A5F"/>
+  <text x="39" y="1085" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF" transform="rotate(-90 39 1085)">INCLUIDOS</text>
+
+  <!-- =================== IDENTIFICACIÓN =================== -->
+  <!-- Box A: Identified from databases -->
+  <rect x="80" y="95" width="420" height="115" fill="#DEEBF7" stroke="#5A8CC2" stroke-width="1.2" rx="3"/>
+  <text x="95" y="118" font-size="13" font-weight="bold" fill="#0B2D4D">Registros identificados desde bases de datos:</text>
+  <text x="105" y="142" font-size="12" fill="#222222">• Scopus (Elsevier) — n = 102</text>
+  <text x="105" y="160" font-size="12" fill="#222222">• PubMed/MEDLINE — n = 16</text>
+  <text x="95" y="188" font-size="13" font-weight="bold" fill="#0B2D4D">Total registros identificados: n = 118</text>
+
+  <!-- Box B: Other methods (grey, not used) -->
+  <rect x="540" y="95" width="420" height="115" fill="#EFEFEF" stroke="#9C9C9C" stroke-width="1.2" rx="3"/>
+  <text x="555" y="118" font-size="13" font-weight="bold" fill="#3A3A3A">Registros identificados por otros métodos:</text>
+  <text x="565" y="142" font-size="12" fill="#3A3A3A">• Bola de nieve hacia atrás — n = 0</text>
+  <text x="565" y="160" font-size="12" fill="#3A3A3A">• Listas de referencia de estudios incluidos — n = 0</text>
+  <text x="555" y="188" font-size="11" font-style="italic" fill="#555555">No se identificaron registros adicionales no capturados por bases.</text>
+
+  <!-- Box C: Removed before screening -->
+  <rect x="540" y="240" width="420" height="80" fill="#FDE2C9" stroke="#D9893E" stroke-width="1.2" rx="3"/>
+  <text x="555" y="262" font-size="13" font-weight="bold" fill="#7A4116">Registros eliminados antes del cribado:</text>
+  <text x="565" y="284" font-size="12" fill="#222222">• Duplicados eliminados — n = 0</text>
+  <text x="565" y="302" font-size="12" fill="#222222">• Marcados como ineligibles por herramientas automáticas — n = 0</text>
+  <text x="565" y="316" font-size="12" fill="#222222" font-weight="bold">• Otras razones (tipo de publicación inelegible) — n = 2</text>
+
+  <!-- Arrow from A down -->
+  <line x1="290" y1="210" x2="290" y2="375" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="290,378 286,370 294,370" fill="#3A3A3A"/>
+
+  <!-- Branch from A to C (horizontal then down) -->
+  <line x1="290" y1="225" x2="750" y2="225" stroke="#3A3A3A" stroke-width="1.5"/>
+  <line x1="750" y1="225" x2="750" y2="238" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="750,241 746,233 754,233" fill="#3A3A3A"/>
+
+  <!-- =================== CRIBADO =================== -->
+  <!-- D: Registros cribados -->
+  <rect x="80" y="378" width="420" height="58" fill="#DEEBF7" stroke="#5A8CC2" stroke-width="1.2" rx="3"/>
+  <text x="95" y="400" font-size="13" font-weight="bold" fill="#0B2D4D">Registros cribados por título y resumen</text>
+  <text x="95" y="422" font-size="13" font-weight="bold" fill="#0B2D4D">n = 116</text>
+
+  <!-- E: Excluded screening -->
+  <rect x="540" y="378" width="420" height="58" fill="#FDE2C9" stroke="#D9893E" stroke-width="1.2" rx="3"/>
+  <text x="555" y="400" font-size="13" font-weight="bold" fill="#7A4116">Registros excluidos en cribado (título/resumen)</text>
+  <text x="555" y="422" font-size="13" font-weight="bold" fill="#222222">n = 92</text>
+
+  <!-- Arrow D → E -->
+  <line x1="500" y1="407" x2="540" y2="407" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="540,407 532,403 532,411" fill="#3A3A3A"/>
+
+  <!-- Arrow D → F (down) -->
+  <line x1="290" y1="436" x2="290" y2="468" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="290,471 286,463 294,463" fill="#3A3A3A"/>
+
+  <!-- F: Reportes buscados -->
+  <rect x="80" y="471" width="420" height="58" fill="#DEEBF7" stroke="#5A8CC2" stroke-width="1.2" rx="3"/>
+  <text x="95" y="493" font-size="13" font-weight="bold" fill="#0B2D4D">Reportes buscados para recuperación de texto completo</text>
+  <text x="95" y="515" font-size="13" font-weight="bold" fill="#0B2D4D">n = 24</text>
+
+  <!-- G: No recuperados -->
+  <rect x="540" y="471" width="420" height="58" fill="#FDE2C9" stroke="#D9893E" stroke-width="1.2" rx="3"/>
+  <text x="555" y="493" font-size="13" font-weight="bold" fill="#7A4116">Reportes no recuperados</text>
+  <text x="555" y="515" font-size="13" font-weight="bold" fill="#222222">n = 0</text>
+
+  <!-- Arrow F → G -->
+  <line x1="500" y1="500" x2="540" y2="500" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="540,500 532,496 532,504" fill="#3A3A3A"/>
+
+  <!-- Arrow F → H -->
+  <line x1="290" y1="529" x2="290" y2="565" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="290,568 286,560 294,560" fill="#3A3A3A"/>
+
+  <!-- H: Reportes evaluados -->
+  <rect x="80" y="568" width="420" height="58" fill="#DEEBF7" stroke="#5A8CC2" stroke-width="1.2" rx="3"/>
+  <text x="95" y="590" font-size="13" font-weight="bold" fill="#0B2D4D">Reportes evaluados para elegibilidad (texto completo)</text>
+  <text x="95" y="612" font-size="13" font-weight="bold" fill="#0B2D4D">n = 24</text>
+
+  <!-- I: Excluded with reason -->
+  <rect x="540" y="568" width="420" height="190" fill="#FDE2C9" stroke="#D9893E" stroke-width="1.2" rx="3"/>
+  <text x="555" y="590" font-size="13" font-weight="bold" fill="#7A4116">Reportes excluidos (con razón documentada):</text>
+  <text x="565" y="614" font-size="12" fill="#222222">• Publicación duplicada (versión EN/ES del mismo estudio) — n = 1</text>
+  <text x="565" y="634" font-size="12" fill="#222222">• Fuera de alcance de diseño (e-learning sin análisis empírico) — n = 1</text>
+  <text x="565" y="654" font-size="12" fill="#222222">• Fuera de alcance de diseño (mapeo de marcos sin análisis) — n = 1</text>
+  <text x="565" y="674" font-size="12" fill="#222222">• Fuera de alcance del fenómeno (enfoque clínico-respiratorio) — n = 1</text>
+  <line x1="555" y1="694" x2="945" y2="694" stroke="#D9893E" stroke-width="0.8"/>
+  <text x="555" y="716" font-size="13" font-weight="bold" fill="#222222">Total excluidos con razón: n = 4</text>
+  <text x="555" y="738" font-size="11" font-style="italic" fill="#555555">Cribado y elegibilidad por un revisor con criterios SPIDER explícitos.</text>
+
+  <!-- Arrow H → I -->
+  <line x1="500" y1="597" x2="540" y2="597" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="540,597 532,593 532,601" fill="#3A3A3A"/>
+
+  <!-- Arrow H → J -->
+  <line x1="290" y1="626" x2="290" y2="1015" stroke="#3A3A3A" stroke-width="1.5"/>
+  <polygon points="290,1018 286,1010 294,1010" fill="#3A3A3A"/>
+
+  <!-- =================== INCLUIDOS =================== -->
+  <!-- J: Included studies -->
+  <rect x="80" y="1018" width="420" height="80" fill="#C5E0B4" stroke="#4F8B3C" stroke-width="1.2" rx="3"/>
+  <text x="95" y="1042" font-size="14" font-weight="bold" fill="#1F4A11">Estudios incluidos en la revisión</text>
+  <text x="95" y="1068" font-size="15" font-weight="bold" fill="#000000">n = 20</text>
+  <text x="95" y="1090" font-size="11" font-style="italic" fill="#3A3A3A">Reportes asociados a los estudios incluidos: n = 20</text>
+
+  <!-- K: Notes -->
+  <rect x="540" y="1018" width="420" height="140" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" rx="3" stroke-dasharray="3,3"/>
+  <text x="555" y="1040" font-size="13" font-weight="bold" fill="#0B2D4D">Notas al diagrama</text>
+  <text x="565" y="1062" font-size="11" fill="#222222">• Búsqueda ejecutada el 10 de mayo de 2026 en Scopus y PubMed.</text>
+  <text x="565" y="1080" font-size="11" fill="#222222">• Idiomas elegibles: español, inglés y portugués (2006–2026).</text>
+  <text x="565" y="1098" font-size="11" fill="#222222">• Síntesis temática de Thomas &amp; Harden (2008); calidad CASP + JBI.</text>
+  <text x="565" y="1116" font-size="11" fill="#222222">• Pregunta tipo SPIDER, encuadre crítico-territorial.</text>
+  <text x="565" y="1134" font-size="11" fill="#222222">• Sin registro previo en PROSPERO (ítem 24 PRISMA 2020 reportado).</text>
+  <text x="565" y="1152" font-size="11" fill="#222222">• Cumple guía PRISMA 2020 (Page et al., BMJ 2021).</text>
+
+  <!-- Footer -->
+  <line x1="80" y1="1200" x2="960" y2="1200" stroke="#BFBFBF" stroke-width="0.6"/>
+  <text x="500" y="1232" text-anchor="middle" font-size="11" font-style="italic" fill="#555555">Revisión sistemática — Gobernanza territorial de la APS y determinación social de inequidades en salud</text>
+  <text x="500" y="1250" text-anchor="middle" font-size="11" font-style="italic" fill="#555555">Construcción y aplicación de un marco analítico-interpretativo en Cúcuta — Norte de Santander, Colombia (2026)</text>
+</svg>

@@ -1,0 +1,35 @@
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:      <https://example.org/dataset/gobernanza-aps-rs-2026/> .
+
+ex:dataset a dcat:Dataset ;
+    dcterms:title "Estudios incluidos en la revisión sistemática sobre gobernanza territorial de la APS y determinación social de inequidades en salud (2006–2026)"@es ;
+    dcterms:description "Dataset de la revisión sistemática (PRISMA 2020, SPIDER): 20 estudios incluidos y flujo de selección PRISMA. Insumo de la tesis doctoral sobre Cúcuta–Norte de Santander, Colombia."@es ;
+    dcterms:issued "2026-11-08"^^xsd:date ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator <https://orcid.org/0000-0002-1741-6067> ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+        dcat:startDate "2006-01-01"^^xsd:date ;
+        dcat:endDate "2026-05-10"^^xsd:date ] ;
+    dcat:keyword "atención primaria de salud"@es, "gobernanza en salud"@es, "inequidades en salud"@es,
+                 "determinación social de la salud"@es, "revisión sistemática"@es ;
+    dcat:distribution ex:estudios_incluidos, ex:flujo_prisma .
+
+<https://orcid.org/0000-0002-1741-6067> a foaf:Person ;
+    foaf:name "Jose Fred Quiroz Ortega" ;
+    org:memberOf [ a foaf:Organization ; foaf:name "Universidad de Pamplona" ; dcterms:description "Doctorado en Salud Pública"@es ] ;
+    foaf:mbox <mailto:jfquiroz26@gmail.com> .
+
+ex:estudios_incluidos a dcat:Distribution ;
+    dcterms:title "estudios_incluidos.csv" ;
+    dcat:downloadURL <data/processed/estudios_incluidos.csv> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> .
+
+ex:flujo_prisma a dcat:Distribution ;
+    dcterms:title "flujo_prisma.csv" ;
+    dcat:downloadURL <data/processed/flujo_prisma.csv> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> .

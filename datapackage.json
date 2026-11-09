@@ -1,0 +1,269 @@
+{
+  "profile": "tabular-data-package",
+  "name": "gobernanza-aps-determinacion-social-rs-2026",
+  "title": "Estudios incluidos en la revisión sistemática sobre gobernanza territorial de la APS y determinación social de inequidades en salud (2006–2026)",
+  "description": "Dataset de la revisión sistemática (PRISMA 2020, SPIDER) que fundamenta la tesis doctoral sobre gobernanza territorial de la Atención Primaria en Salud en Cúcuta–Norte de Santander, Colombia. Incluye los 20 estudios incluidos con sus características y el flujo de selección PRISMA.",
+  "version": "1.0.0",
+  "created": "2026-11-08T00:00:00Z",
+  "language": "es",
+  "keywords": [
+    "atención primaria de salud",
+    "gobernanza en salud",
+    "inequidades en salud",
+    "determinación social de la salud",
+    "territorialización",
+    "revisión sistemática",
+    "PRISMA 2020",
+    "Colombia"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Scopus (búsqueda del 2026-05-10)",
+      "path": "https://www.scopus.com"
+    },
+    {
+      "title": "PubMed (búsqueda del 2026-05-10)",
+      "path": "https://pubmed.ncbi.nlm.nih.gov"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Jose Fred Quiroz Ortega",
+      "role": "author",
+      "email": "jfquiroz26@gmail.com",
+      "organization": "Universidad de Pamplona – Doctorado en Salud Pública",
+      "path": "https://orcid.org/0000-0002-1741-6067"
+    }
+  ],
+  "resources": [
+    {
+      "name": "estudios_incluidos",
+      "path": "data/processed/estudios_incluidos.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Un registro por estudio incluido en la síntesis (n = 20).",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_estudio",
+            "type": "string",
+            "description": "Identificador único del estudio",
+            "constraints": {
+              "required": true,
+              "unique": true,
+              "pattern": "E[0-9]{2}"
+            }
+          },
+          {
+            "name": "num_ref_manuscrito",
+            "type": "integer",
+            "description": "Número de referencia en el manuscrito; vacío si no figura",
+            "constraints": {
+              "minimum": 1,
+              "maximum": 44
+            }
+          },
+          {
+            "name": "autores",
+            "type": "string",
+            "description": "Autor(es) en forma abreviada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "anio",
+            "type": "integer",
+            "description": "Año de publicación",
+            "constraints": {
+              "required": true,
+              "minimum": 2006,
+              "maximum": 2026
+            }
+          },
+          {
+            "name": "pais_region",
+            "type": "string",
+            "description": "País, subregión o ámbito del estudio",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "pais_iso3",
+            "type": "string",
+            "description": "Código ISO 3166-1 alfa-3; vacío si es multipaís o regional",
+            "constraints": {
+              "pattern": "[A-Z]{3}"
+            }
+          },
+          {
+            "name": "region_oms",
+            "type": "string",
+            "description": "Región de la OMS (derivada)",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "AFR",
+                "AMR",
+                "SEAR",
+                "EMR",
+                "WPR",
+                "GLOBAL"
+              ]
+            }
+          },
+          {
+            "name": "diseno_reportado",
+            "type": "string",
+            "description": "Diseño tal como se reporta en la Tabla 1",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_diseno",
+            "type": "string",
+            "description": "Categoría de diseño (derivada)",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "cualitativo_caso",
+                "analisis_politica",
+                "revision",
+                "metodologico"
+              ]
+            }
+          },
+          {
+            "name": "herramienta_calidad",
+            "type": "string",
+            "description": "Instrumento de evaluación crítica (derivado)",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "CASP cualitativo",
+                "CASP revision sistematica",
+                "JBI politica/transversal"
+              ]
+            }
+          },
+          {
+            "name": "foco_tematico",
+            "type": "string",
+            "description": "Foco temático principal",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "en_lista_referencias",
+            "type": "boolean",
+            "description": "¿Tiene referencia completa en el manuscrito?",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "referencia_completa",
+            "type": "string",
+            "description": "Referencia en estilo Vancouver; vacío si no disponible"
+          }
+        ],
+        "primaryKey": [
+          "id_estudio"
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "flujo_prisma",
+      "path": "data/processed/flujo_prisma.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Conteos del diagrama de flujo PRISMA 2020.",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_paso",
+            "type": "string",
+            "description": "Identificador del paso",
+            "constraints": {
+              "required": true,
+              "unique": true,
+              "pattern": "P[0-9]{2}"
+            }
+          },
+          {
+            "name": "fase",
+            "type": "string",
+            "description": "Fase PRISMA 2020",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "identificacion",
+                "cribado",
+                "elegibilidad",
+                "inclusion"
+              ]
+            }
+          },
+          {
+            "name": "descripcion",
+            "type": "string",
+            "description": "Qué se cuenta en el paso",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "fuente",
+            "type": "string",
+            "description": "Base de datos de origen",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "Scopus",
+                "PubMed",
+                "Scopus+PubMed"
+              ]
+            }
+          },
+          {
+            "name": "n",
+            "type": "integer",
+            "description": "Número de registros o reportes",
+            "constraints": {
+              "required": true,
+              "minimum": 0
+            }
+          },
+          {
+            "name": "motivo_exclusion",
+            "type": "string",
+            "description": "Motivo de exclusión; vacío si no aplica"
+          }
+        ],
+        "primaryKey": [
+          "id_paso"
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

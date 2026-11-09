@@ -1,0 +1,79 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Estudios incluidos en la revisión sistemática sobre gobernanza territorial de la APS y determinación social de inequidades en salud (2006–2026)",
+  "description": "Dataset de la revisión sistemática (PRISMA 2020, SPIDER) que fundamenta la tesis doctoral sobre gobernanza territorial de la Atención Primaria en Salud en Cúcuta–Norte de Santander, Colombia. Incluye 20 estudios incluidos y el flujo de selección PRISMA.",
+  "version": "1.0.0",
+  "dateCreated": "2026-11-08",
+  "inLanguage": "es",
+  "keywords": [
+    "atención primaria de salud",
+    "gobernanza en salud",
+    "inequidades en salud",
+    "determinación social de la salud",
+    "revisión sistemática",
+    "PRISMA 2020"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Person",
+    "name": "Jose Fred Quiroz Ortega",
+    "email": "jfquiroz26@gmail.com",
+    "@id": "https://orcid.org/0000-0002-1741-6067",
+    "identifier": "https://orcid.org/0000-0002-1741-6067",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad de Pamplona"
+    },
+    "memberOf": {
+      "@type": "EducationalOccupationalProgram",
+      "name": "Doctorado en Salud Pública"
+    }
+  },
+  "temporalCoverage": "2006-01-01/2026-05-10",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Internacional"
+  },
+  "isBasedOn": [
+    {
+      "@type": "DataCatalog",
+      "name": "Scopus",
+      "url": "https://www.scopus.com"
+    },
+    {
+      "@type": "DataCatalog",
+      "name": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov"
+    }
+  ],
+  "variableMeasured": [
+    "id_estudio",
+    "num_ref_manuscrito",
+    "autores",
+    "anio",
+    "pais_region",
+    "pais_iso3",
+    "region_oms",
+    "diseno_reportado",
+    "categoria_diseno",
+    "herramienta_calidad",
+    "foco_tematico",
+    "en_lista_referencias",
+    "referencia_completa"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "estudios_incluidos.csv",
+      "encodingFormat": "text/csv",
+      "contentUrl": "data/processed/estudios_incluidos.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "flujo_prisma.csv",
+      "encodingFormat": "text/csv",
+      "contentUrl": "data/processed/flujo_prisma.csv"
+    }
+  ]
+}

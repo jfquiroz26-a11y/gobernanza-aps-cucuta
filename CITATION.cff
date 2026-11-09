@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Si usas este dataset, por favor cítalo así."
+type: dataset
+title: "Estudios incluidos en la revisión sistemática sobre gobernanza territorial de la APS y determinación social de inequidades en salud (2006–2026)"
+version: "1.0.0"
+date-released: 2026-11-08
+# doi: "10.5281/zenodo.XXXXXXX"   # completar al publicar en Zenodo
+
+authors:
+  - family-names: "Quiroz Ortega"
+    given-names: "Jose Fred"
+    email: "jfquiroz26@gmail.com"
+    affiliation: "Universidad de Pamplona – Doctorado en Salud Pública"
+    orcid: "https://orcid.org/0000-0002-1741-6067"
+
+abstract: >-
+  Dataset de la revisión sistemática (PRISMA 2020, pregunta SPIDER) sobre cómo
+  la gobernanza territorial de la Atención Primaria en Salud configura la
+  determinación social de las inequidades en salud. Contiene los 20 estudios
+  incluidos (2010–2025) y el flujo de selección (118 registros de Scopus y
+  PubMed). Insumo de la tesis doctoral sobre Cúcuta–Norte de Santander, Colombia.
+
+keywords:
+  - atención primaria de salud
+  - gobernanza en salud
+  - inequidades en salud
+  - determinación social de la salud
+  - revisión sistemática
+  - PRISMA 2020
+
+license: CC-BY-4.0

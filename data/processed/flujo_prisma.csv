@@ -1,0 +1,14 @@
+id_paso,fase,descripcion,fuente,n,motivo_exclusion
+P01,identificacion,Registros identificados,Scopus,102,
+P02,identificacion,Registros identificados,PubMed,16,
+P03,identificacion,Duplicados eliminados,Scopus+PubMed,0,
+P04,identificacion,Registros excluidos antes del cribado,Scopus+PubMed,2,Tipo de publicación inelegible (editorial/erratum)
+P05,cribado,Registros cribados por título y resumen,Scopus+PubMed,116,
+P06,cribado,Registros excluidos en cribado,Scopus+PubMed,92,Desalineación con los tres dominios SPIDER
+P07,cribado,Reportes buscados en texto completo,Scopus+PubMed,24,
+P08,cribado,Reportes no recuperados,Scopus+PubMed,0,
+P09,elegibilidad,Reportes evaluados para elegibilidad,Scopus+PubMed,24,
+P10,elegibilidad,Reportes excluidos,Scopus+PubMed,1,Publicación duplicada en español del mismo estudio
+P11,elegibilidad,Reportes excluidos,Scopus+PubMed,2,Fuera de alcance de diseño
+P12,elegibilidad,Reportes excluidos,Scopus+PubMed,1,Fuera de alcance del fenómeno
+P13,inclusion,Estudios incluidos en la síntesis,Scopus+PubMed,20,
