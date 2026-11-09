@@ -1,6 +1,6 @@
 # 🧪 Metodología de generación de los datos
 
-Volver a [INICIO](../INICIO.md).
+Volver al [índice](../INICIO.md).
 
 ## 📍 Contexto y propósito
 
@@ -44,17 +44,18 @@ Los datos se generaron en la revisión sistemática *"Gobernanza territorial de 
 
 - `estudios_incluidos.csv` se compiló a partir de la **Tabla 1** y la **lista de referencias** del manuscrito (versión del 11-05-2026).
 - Se añadieron variables derivadas (`pais_iso3`, `region_oms`, `categoria_diseno`, `herramienta_calidad`, `en_lista_referencias`) con reglas explícitas descritas en [data_dictionary](data_dictionary.md).
+- Las referencias bibliográficas de los 7 estudios sin número en la lista de referencias del manuscrito (E02, E05, E06, E10, E11, E13, E18) se obtuvieron y verificaron en la publicación original, con su DOI. La autoría abreviada de E18 se registró conforme a la publicación original (Haenssgen et al.).
 - `flujo_prisma.csv` se construyó desde la sección 5.1 del manuscrito y la Figura 1.
 - No hubo anonimización: los datos son metadatos bibliográficos públicos.
 
 ## 📎 Materiales de soporte
 
-- [x] Diagrama PRISMA 2020: ![Figura1_PRISMA_2020_flow.png](figuras/Figura1_PRISMA_2020_flow.png) (versión vectorial: [Figura1_PRISMA_2020_flow.svg](figuras/Figura1_PRISMA_2020_flow.svg))
-- [ ] Exportes originales de Scopus y PubMed (por agregar en `data/raw/`)
-- [ ] Libro de trabajo de cribado con decisiones y motivos (por agregar en `data/raw/`)
-- [ ] Matriz de extracción completa (por agregar)
-- [ ] Planillas CASP/JBI por estudio (por agregar)
+**Figura 1.** Diagrama de flujo PRISMA 2020 (versión vectorial: [SVG](figuras/Figura1_PRISMA_2020_flow.svg)).
 
-## 🔭 Datos futuros de la tesis
+![Diagrama de flujo PRISMA 2020](figuras/Figura1_PRISMA_2020_flow.png)
 
-Esta versión (1.0) documenta solo el componente de **revisión sistemática**. Los datos del trabajo empírico en Cúcuta–Norte de Santander se incorporarán en versiones posteriores, cada uno con su propio CSV, entrada en el diccionario y registro en [CHANGELOG](../CHANGELOG.md).
+**Disponibles bajo solicitud razonable al autor** (no incluidos en este repositorio): exportes originales de Scopus y PubMed, libro de trabajo de cribado con decisiones y motivos, matriz de extracción completa y planillas CASP/JBI por estudio.
+
+## 🔭 Versiones posteriores
+
+Esta versión documenta el componente de **revisión sistemática** de la tesis. Los datos del componente empírico en Cúcuta–Norte de Santander se incorporarán en versiones posteriores, registradas en el [CHANGELOG](../CHANGELOG.md).

@@ -1,6 +1,6 @@
 # 📘 Diccionario de datos
 
-Descripción, variable por variable, de los archivos CSV del repositorio. Volver a [INICIO](../INICIO.md).
+Descripción, variable por variable, de los archivos CSV del repositorio. Volver al [índice](../INICIO.md).
 
 **Formato común:** UTF-8, separador coma (`,`), primera fila = encabezados, texto con comas entre comillas dobles, celdas vacías = dato no disponible.
 
@@ -23,8 +23,8 @@ Descripción, variable por variable, de los archivos CSV del repositorio. Volver
 | 9 | `categoria_diseno` | Categórica | Agrupación del diseño en cuatro categorías | `revision` | `cualitativo_caso` · `analisis_politica` · `revision` · `metodologico` | **Derivada** (ver regla abajo) |
 | 10 | `herramienta_calidad` | Categórica | Instrumento de evaluación crítica aplicado según el diseño | `CASP cualitativo` | `CASP cualitativo` · `CASP revision sistematica` · `JBI politica/transversal` | **Derivada** (ver regla abajo) |
 | 11 | `foco_tematico` | Texto | Foco temático principal del estudio | `Inequidades en transformación digital de APS` | Texto libre | Manuscrito, Tabla 1 |
-| 12 | `en_lista_referencias` | Booleano | Indica si el estudio tiene referencia completa en el manuscrito | `true` | `true` / `false` | Verificación propia |
-| 13 | `referencia_completa` | Texto | Referencia bibliográfica completa (estilo Vancouver) | — | Texto libre; vacío si `en_lista_referencias = false` | Manuscrito, sección 10 |
+| 12 | `en_lista_referencias` | Booleano | Indica si el estudio figura con número en la lista de referencias del manuscrito | `true` | `true` / `false` | Verificación propia |
+| 13 | `referencia_completa` | Texto | Referencia bibliográfica completa (estilo Vancouver) | — | Texto libre; sin vacíos | Manuscrito, sección 10; si `en_lista_referencias = false`, publicación original (DOI) |
 
 ### Reglas de derivación
 

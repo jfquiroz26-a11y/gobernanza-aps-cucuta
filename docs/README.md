@@ -1,6 +1,6 @@
 # 📘 Libro de códigos (codebook)
 
-Esquema general del dataset y **vista previa legible en Obsidian** de los CSV (Obsidian no muestra tablas CSV de forma nativa). Volver a [INICIO](../INICIO.md).
+Esquema general del dataset y vista previa de los archivos CSV. Volver al [índice](../INICIO.md).
 
 ## 🧱 Tablas
 
@@ -49,7 +49,7 @@ Sin llave común. `flujo_prisma.P13.n` = número de filas de `estudios_incluidos
 | E15 | Abimbola et al. | 2017 | Nigeria | AFR | cualitativo_caso | Gobernanza de la posta y rotación de trabajadores de APS donde no hay política formal |
 | E16 | Mussa & Dagada | 2025 | Etiopía | AFR | revision | Inequidades en transformación digital de APS |
 | E17 | Santric Milicevic et al. | 2024 | Multilateral (revisión) | GLOBAL | revision | Equidad de la fuerza laboral sanitaria en APS |
-| E18 | Kubota et al. | 2024 | Laos | WPR | cualitativo_caso | Engagement comunitario y gobernanza local para equidad por confianza |
+| E18 | Haenssgen et al. | 2024 | Laos | WPR | cualitativo_caso | Engagement comunitario y gobernanza local para equidad por confianza |
 | E19 | Hove et al. | 2022 | Sudáfrica | AFR | revision | Participación comunitaria en APS y gobernanza del recurso hídrico |
 | E20 | Wang et al. | 2015 | China | WPR | revision | Centros comunitarios urbanos para fortalecer APS |
 
@@ -71,4 +71,4 @@ Sin llave común. `flujo_prisma.P13.n` = número de filas de `estudios_incluidos
 | P12 | elegibilidad | Reportes excluidos | Scopus+PubMed | 1 | Fuera de alcance del fenómeno |
 | P13 | inclusion | Estudios incluidos en la síntesis | Scopus+PubMed | 20 |  |
 
-> Esta vista previa es una copia de lectura. **La fuente de verdad son los archivos CSV**: si cambias un CSV, actualiza esta tabla.
+> Vista previa de solo lectura. La versión de referencia de los datos son los archivos CSV.

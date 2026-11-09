@@ -1,12 +1,12 @@
 # 🧬 Declaración FAIR
 
-Autoevaluación honesta del grado en que este dataset cumple los principios FAIR (Wilkinson et al., 2016). Volver a [INICIO](../INICIO.md).
+Grado de cumplimiento de los principios FAIR (Wilkinson et al., 2016). Volver al [índice](../INICIO.md).
 
-| Principio | Qué se cumple | Qué falta |
+| Principio | Cumplimiento | Limitación actual |
 |---|---|---|
-| 🔎 **Findable** (localizable) | Metadatos ricos en `datapackage.json`, `CITATION.cff`, `metadata/schemaorg.jsonld` y `metadata/dcat.ttl`; palabras clave definidas | Identificador persistente (DOI) y depósito en un repositorio indexado (p. ej., Zenodo) |
-| 🌐 **Accessible** (accesible) | Formatos abiertos (CSV, Markdown, JSON, Turtle) legibles sin software propietario | Hoy es local; para ser accesible debe publicarse con URL pública |
-| 🔗 **Interoperable** | Esquema tabular Frictionless; vocabularios estándar (ISO 3166-1 alfa-3, regiones OMS, fases PRISMA 2020); metadatos Schema.org y DCAT | Vocabularios controlados para diseño de estudio (p. ej., términos MeSH de tipo de publicación) |
-| 🔁 **Reusable** (reutilizable) | Licencia clara (CC BY 4.0); procedencia y método documentados; reglas de derivación explícitas; reporte de calidad | Completar las 7 referencias faltantes y añadir ORCID del autor |
+| 🔎 **Findable** (localizable) | Metadatos descriptivos en `datapackage.json`, `CITATION.cff`, `metadata/schemaorg.jsonld` y `metadata/dcat.ttl`; palabras clave; autor identificado con ORCID | Sin identificador persistente (DOI) |
+| 🌐 **Accessible** (accesible) | Repositorio público en GitHub, accesible por HTTPS sin autenticación; formatos abiertos (CSV, Markdown, JSON, Turtle) | Los registros originales de la búsqueda solo están disponibles bajo solicitud |
+| 🔗 **Interoperable** | Esquema tabular Frictionless; vocabularios estándar (ISO 3166-1 alfa-3, regiones OMS, fases PRISMA 2020); metadatos Schema.org y DCAT | Sin vocabulario controlado para el tipo de diseño de estudio |
+| 🔁 **Reusable** (reutilizable) | Licencia CC BY 4.0; procedencia y método documentados; reglas de derivación explícitas; referencias completas con DOI; reporte de calidad | La matriz de extracción completa no forma parte de esta versión |
 
-**Estado global:** parcialmente FAIR. Publicar en Zenodo (que asigna DOI gratis) resolvería la mayor parte de lo pendiente en *F* y *A*.
+**Estado global:** parcialmente FAIR.

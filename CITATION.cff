@@ -4,7 +4,6 @@ type: dataset
 title: "Estudios incluidos en la revisión sistemática sobre gobernanza territorial de la APS y determinación social de inequidades en salud (2006–2026)"
 version: "1.0.0"
 date-released: 2026-11-08
-# doi: "10.5281/zenodo.XXXXXXX"   # completar al publicar en Zenodo
 
 authors:
   - family-names: "Quiroz Ortega"

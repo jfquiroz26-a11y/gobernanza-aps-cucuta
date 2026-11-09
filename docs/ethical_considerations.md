@@ -1,6 +1,6 @@
 # 🤝 Consideraciones éticas y derechos sobre los datos
 
-Volver a [INICIO](../INICIO.md).
+Volver al [índice](../INICIO.md).
 
 ## 🏛️ Aprobación ética
 
@@ -25,12 +25,12 @@ No aplica (no hay participantes).
 | Textos completos de los artículos | No, salvo artículos de acceso abierto con licencia compatible | **No incluidos** |
 | Figura PRISMA | Sí: elaboración propia | Incluida |
 
-> ⚠️ **Antes de publicar** `data/raw/` en un repositorio abierto (Zenodo, GitHub), elimina las columnas de resumen (*abstract*) y palabras clave indexadas de los exportes de Scopus, o conserva esa carpeta solo de forma local.
+Por esta razón, los exportes originales de Scopus y PubMed no se publican en este repositorio; están disponibles bajo solicitud razonable al autor.
 
 ## 💾 Manejo y almacenamiento
 
-- Repositorio almacenado localmente en el computador del investigador, gestionado con Obsidian.
-- Se recomienda copia de respaldo en un servicio institucional o en la nube.
+- La versión de trabajo se gestiona localmente con Obsidian; la versión pública se distribuye en GitHub.
+- Los registros originales de la búsqueda se conservan en el equipo del investigador.
 
 ## 🤝 Reutilización responsable
 
